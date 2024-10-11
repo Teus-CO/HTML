@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: lightsteelblue;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -42,7 +42,6 @@ main {
 
 .tile-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -51,6 +50,7 @@ main {
     height: 150px;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+    float: left;
 }
 
 .tile:hover {
@@ -62,7 +62,8 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
+    
 }
