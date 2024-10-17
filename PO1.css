@@ -16,6 +16,25 @@ header {
     text-align: center;
 }
 
+.title {
+    text-decoration: none;
+}
+
+.title:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title:active {
+    color: white;
+    text-decoration: none;
+  }
+
 nav {
     background-color: #444;
     padding: 1rem;
