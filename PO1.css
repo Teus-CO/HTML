@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    height: 100vh;
+    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 header {
@@ -14,12 +17,20 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
-    text-decoration: none;
+    text-decoration: none;  
+    margin-bottom: 0.5rem;
 }
-
 .title:visited {
     color: white;
     text-decoration: none;
@@ -36,9 +47,11 @@ header {
   }
 
 nav {
+    position: fixed;
     background-color: #444;
     padding: 1rem;
     text-align: center;
+    width: 100%;
 }
 
 nav ul {
@@ -56,7 +69,19 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    padding: 1rem;
+    min-height: 200vh;
+    background-image: url("https://www.kennedyspacecenter.com/-/media/DNC/KSCVC/Event-Images/Rocket-Launches/SpaceX/Falcon-Heavy/Europa-Clipper/FalconHeavy_CloudySky_Daytime_ECLogo.ashx?h=600&w=900&la=en&hash=415205C0EF2243ABBE67C233187FF50C25774532");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+h3 {
+    font-size: larger;
 }
 
 .tile-container {
@@ -70,6 +95,7 @@ main {
     border-radius: 10px;
     transition: background-color 0.3s ease;
     float: left;
+    position: fixed;
 }
 
 .tile:hover {
@@ -81,8 +107,8 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
     width: 100%;
     bottom: 0;
-    
+    position: relative;
+    z-index: 10;
 }
