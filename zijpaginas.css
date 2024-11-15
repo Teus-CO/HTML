@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('europaclipper.jpg');
     background-size: cover;
   }
   
@@ -12,7 +11,24 @@ body {
     padding: 20px;
     text-align: center;
   }
+  .title {
+    text-decoration: none;  
+    margin-bottom: 0.5rem;
+    }
+  .title:visited {
+    color: white;
+    text-decoration: none;
+  }
   
+  .title:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title:active {
+    color: white;
+    text-decoration: none;
+  }
   nav {
     background-color: #555;
     color: #fff;
