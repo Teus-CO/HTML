@@ -1,32 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website Layout</title>
-    <link rel="stylesheet" href="PO1.css">
-</head>
-<body>
-    <header>
-        <h1><a href="PO1.html" class="title">Europa Clipper</a></h1>
-        <nav>
-            <br>
-        <ul>
-            <li><a href="PO1blz1.html">What</a></li>
-            <li><a href="#">Why</a></li>
-            <li><a href="#">How</a></li>
-            <li><a href="#">When</a></li>
-        </ul>
-    </nav>    
-    </header>
-    <main>
-            <div class="tile">
-                <h3>The first ever space mission to research Jupiter’s moon: Europa.</h3>
-            </div>
-    </main>
-    <footer>
-        <p></p>
-    </footer>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+  }
+  
+  header {
+    background-color: lightsteelblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .title {
+    text-decoration: none;  
+    margin-bottom: 0.5rem;
+    }
+  .title:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title:active {
+    color: white;
+    text-decoration: none;
+  }
+  nav {
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    margin-right: 50px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 5px;
+  }
+  
+  .content {
+    float: center;
+    text-align: center;
+    border: 1px solid black; 
+    background-color: gray;
+    border-radius: 25px;
+    padding: 20px;
+    margin: auto;
+    max-width: 500px;
+  }
+
+  header {
+    background-color: lightsteelblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+.title {
+    text-decoration: none;  
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .title:active {
+    color: white;
+    text-decoration: none;
+  }
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.tile-container {
+    display: grid;
+    gap: 20px;
+}
+
+.tile {
+    background-color: #999;
+    height: 150px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    float: left;
+    position: fixed;
+}
+
+.tile:hover {
+    background-color: #555;
+}
