@@ -77,9 +77,8 @@ main {
 }
 footer {
   background-color: black;
-  position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 99.1%;
   text-align: center;
   color: white;
   border-top: 1px solid white;
