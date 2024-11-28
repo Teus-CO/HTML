@@ -51,6 +51,7 @@ main {
 }
 
 .content {
+  color: white;
   text-align: center;
   border: 1px solid black;
   background-color: gray;
