@@ -61,6 +61,10 @@ main {
   margin-bottom: 1px;
   margin-left: auto;
 }
+.content:hover {
+  background-color: #555;
+  transition-duration: 250ms;
+}
 .mains {
   background-color: lightsteelblue;
   overflow: hidden;
@@ -83,4 +87,8 @@ footer {
   color: white;
   border-top: 1px solid white;
   padding: 10px;
+}
+.launchbutton:hover {
+  background-color: darkred;
+  transition-duration: 250ms;
 }
