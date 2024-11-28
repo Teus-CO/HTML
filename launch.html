@@ -1,17 +1,50 @@
 <html lang="en">
 <head>
+    <style>
+        div {
+            float: right;
+            
+            color: white;
+            text-align: center;
+            border: 1px solid black;
+            background-color: gray;
+            border-radius: 25px;
+            padding: 20px;
+            max-width: 500px;
+            margin-bottom: 1px;
+            margin-left: auto;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>launch</title>
 </head>
-<body style="background-image: url(europaclipperlaunch.jpg);">
-    <audio autoplay loop>
-        <source src="silent.mp3" type="audio/mpeg">
-        <source src="rocketlaunch.wav" type="audio/wav">
+<body  style="background-position: center;  background-size: cover;  background-image: url(Ec\ launch.gif)">
+    <audio id="rocketAudio">
+        <source src="rocketlaunch.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    
+    <div style="background-color: red;">
+        <a href="pagina1.html">Back</a>  
+      </div>
     
     
 </body>
+<script>
+    function playAudioAfterClick() {
+        const audio = document.getElementById('rocketAudio');
+        audio.play().then(() => {
+            console.log('Audio playback started successfully.');
+        }).catch(error => {
+            console.error('Audio playback failed:', error);
+        });
+
+        // Remove the event listener after successful play attempt
+        document.removeEventListener('click', playAudioAfterClick);
+    }
+
+    // Listen specifically for a click to play the audio
+    document.addEventListener('click', playAudioAfterClick);
+</script>
+
 </html>
