@@ -20,16 +20,14 @@
     <title>launch</title>
 </head>
 <body  style="background-position: center;  background-size: cover;  background-image: url(launchgif.gif)">
-    <audio id="rocketAudio">
+    <audio id="rocketAudio"> <!-- hier zit de audio met een mp3 en daarna moest ik het definen met type= audio/mpeg-->
         <source src="rocketlaunch.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
     </audio>
     <div style="background-color: red;">
         <a href="pagina1.html">Back</a>  
       </div>
-    
-    
 </body>
+<!-- Dit is gedaan met AI omdat ik geen javascript snap en het niet  werkte hoe ik het wilde zonder javascript -->
 <script>
     function playAudioAfterClick() {
         const audio = document.getElementById('rocketAudio');
@@ -39,11 +37,11 @@
             console.error('Audio playback failed:', error);
         });
 
-        // Remove the event listener after successful play attempt
+       
         document.removeEventListener('click', playAudioAfterClick);
     }
 
-    // Listen specifically for a click to play the audio
+    
     document.addEventListener('click', playAudioAfterClick);
 </script>
 
