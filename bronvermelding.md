@@ -1,5 +1,5 @@
 bronnen:
-informatie over europaclipper max?????
+https://science.nasa.gov/mission/europa-clipper/
 achtergronden van Nasa en van chatgpt
 gif van lancering van Nasa
 javascript van Chatgpt
