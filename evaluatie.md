@@ -5,3 +5,4 @@ ik heb ook de Launch knop gemaakt en de html pagina daarvan en een deel met java
 ook heb ik de achtergronden gemaakt en die heb ik deels met chatgpt laten maken voor wat leuke toepasbare afbeeldingen
 
 Max evaluatie:
+Gedurende dit project hebben teus en ik hard gewerkt aan het project. De samenwerking is goed gegaan en er werd ook goed gecommuniceerd. Het ontwerp van het design van de paginas in html en css heeft ons het grootste deel van de werktijd gekost, maar daarna ging de rest een stuk sneller. Ik ben ook zeer tevreden over het eindproduct.
